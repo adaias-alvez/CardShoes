@@ -1,0 +1,405 @@
+*{
+    font-family: 'consola', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a87d5a;
+}
+.c{
+    position: relative;
+    border-radius: 50%;
+    background:linear-gradient(180deg, #04D4F0, #00FA9A);
+    transition: 1s;
+    padding: 0;
+    margin-right: 10%;
+    left: 5%;
+}
+.c:hover{
+    box-shadow: 0 20px 50px rgba(0,0,0, .80); 
+    border-radius: 22px;
+    padding: 6;
+}
+.c .card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.c .dd{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.c .dd:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#FF9000, #1d1d1f);
+    clip-path: circle(150px at 80% 20%);
+    transition: .75s ease-in-out;
+}
+.c .dd:after{
+    content: 'Adidas';
+    position: absolute;
+    top: 44%;
+    left: -3%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 295, 0.06);
+}
+.c .dd:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+.c .card:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#06ca70, #3CB371);
+    clip-path: circle(150px at 80% 20%);
+    transition: .75s ease-in-out;
+}.c .card:after{
+    content: 'Adidas';
+    position: absolute;
+    top: 44%;
+    left: -3%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 295, 0.06);
+}
+.c .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+.c .card .imgbx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 220px;
+    transition: 1s;
+}.c .dd .imgbx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 220px;
+    transition: 1s;
+}
+.c .card:hover .imgbx{
+    top: 12%;
+    transform: translateY(0%);
+}.c .dd:hover .imgbx{
+    top: 12%;
+    transform: translateY(0%);
+}
+.c .card .imgbx img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 270px;
+    transition: .50s;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    }.c .dd .imgbx img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 270px;
+    transition: .50s;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    }
+.c .card:hover .imgbx img{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+}.c .dd:hover .imgbx img{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+.c .card .imgbx img:hover{
+    width: 300px;
+}.c .dd .imgbx img:hover{
+    width: 300px;
+}
+.c .card .cbx{
+    position: absolute;
+    bottom: 60;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}.c .dd .cbx{
+    position: absolute;
+    bottom: 60;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+.c .card:hover .cbx{
+    height: 210px;
+}.c .dd:hover .cbx{
+    height: 210px;
+}
+.c .card .cbx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    top: 10;
+}
+h2::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: linear-gradient(45deg, #06ca70, #00FF7F);
+    transition: 0.60s;
+    margin: 0 auto;
+}h2:hover::after{
+    content: '';
+    width: 160px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+}
+.dd h2::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: linear-gradient(25deg, #FF9000,	#fd0210);
+    margin: 0 auto;
+}.dd h2:hover::after{
+    content: '';
+    width: 160px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+.c .dd .cbx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    top: 10;
+}
+.c .card .cbx .t,
+.c .card .cbx .cor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition:.5s;
+    opacity: 0;
+    visibility: hidden;
+}.c .dd .cbx .t,
+.c .dd .cbx .cor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition:.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.c .card:hover .cbx .t{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s
+}.c .card:hover .cbx .cor{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s
+}.c .dd:hover .cbx .t{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s
+}.c .dd:hover .cbx .cor{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s
+}
+
+.c .card .cbx .t h3,
+.c .card .cbx .cor h3
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px
+}.c .dd .cbx .t h3,
+.c .dd .cbx .cor h3
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px
+}
+.c .card .cbx .t span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin:0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}.c .dd .cbx .t span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin:0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.c .card .cbx .t span:hover{
+    background:linear-gradient(140deg, #06ca70, #00FF7F);
+    width: 28px;
+    height: 28px
+}.c .dd .cbx .t span:hover{
+    background:linear-gradient(140deg, #FF9000,#FF4900);
+    width: 28px;
+    height: 28px
+}
+.c .card .cbx .t .kk:hover{
+    background:linear-gradient(140deg,#ff007f, #df0772);
+}.c .dd .cbx .t .kk:hover{
+    background:linear-gradient(140deg,#ff007f, #df0772);
+}
+.c .card .cbx .cor span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .25s;
+}.c .dd .cbx .cor span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .25s;
+}
+.c .card .cbx .cor .cc:hover{
+    width: 25px;
+    height: 25px;
+}.c .card .cbx .cor .cc:hover{
+    width: 25px;
+    height: 25px;
+}.c .dd .cbx .cor .cc2:hover{
+    width: 25px;
+    height: 25px;
+}.c .dd .cbx .cor .cc:hover{
+    width: 25px;
+    height: 25px;
+}
+.c .card .cbx .cor span:nth-child(2){
+    background:linear-gradient(140deg, #06ca70, #3CB371);
+}	.c .card .cbx .cor span:nth-child(3){
+    background:linear-gradient(140deg, #009EFF, #0064A1);
+}	.c .card .cbx .cor span:nth-child(4){
+    background:linear-gradient(140deg, #e91e64, #a0033a);
+}	.c .dd .cbx .cor span:nth-child(2){
+    background: #06ca70;
+}.c .dd .cbx .cor .cc2:nth-child(2){
+    background:linear-gradient(140deg, #FF9000,#FF4900);
+}	.c .dd .cbx .cor span:nth-child(3){
+    background:linear-gradient(140deg, #009EFF, #0064A1);
+}	.c .dd .cbx .cor span:nth-child(4){
+    background:linear-gradient(140deg, #e91e64, #a0033a);
+}	
+
+ .btn{
+padding: 1;
+width: 50%;
+height: 35px;
+border-radius: 5px;
+background: #232323;
+border: 3px solid;
+color: white;
+font-weight: 400;
+text-align: center;
+text-transform: uppercase;
+cursor: pointer;
+font-size: 13px;
+position: relative;
+margin-bottom: 3%;
+margin-top: 5%;
+}
+.btn::before,.btn::after{
+content: '';
+position: absolute;
+width: 11.7px;
+height: 4px;
+transform: skewX(45deg);
+transition: .40s linear;
+background:#111111; 
+opacity: 0.93;
+}
+.btn::before{
+top: -4px;
+left: 10%;
+}
+.btn::after{
+bottom: -4px;
+right: 10%;
+}
+.btn:hover::before{
+left: 80%;
+}
+.btn:hover::after{
+right: 80%;
+}
+a{
+font-family: arial;
+color: white;
+font-weight: 500
+}
+a:visited{
+color: white
+}
+a:hover{
+color: silver;
+}
+a:link{
+text-decoration:none;
+}
+
