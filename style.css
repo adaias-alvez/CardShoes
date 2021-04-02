@@ -15,7 +15,8 @@ body{
     transition: 1s;
     padding: 0;
     margin-right: 10%;
-    left: 5%;
+    left: 5%;			
+    margin-bottom: 40px;
 }
 .c:hover{
     box-shadow: 0 20px 50px rgba(0,0,0, .80); 
